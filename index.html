@@ -1,0 +1,105 @@
+<section id="bhagwal-info" style="text-align:center; padding:20px; max-width:800px; margin:auto;">
+  <h2>Bhagwal, Pakistan</h2>
+  <p>Explore Bhagwal village, view its location, read more on Wikipedia, explore it in 3D on Google Earth, visit the official website, and see daily prayer times at Jamia Mosque Gulzar-e-Madina.</p>
+
+  <!-- Google Map Embed -->
+  <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%; border-radius:10px; box-shadow:0 2px 8px rgba(0,0,0,0.2); margin-bottom:15px;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10355.571492436531!2d73.94494208774945!3d32.82141331071331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391fa6bf10782fbf%3A0x71850a23cd4e8def!2sBhagwal,+Kharian,+Gujrat,+Pakistan!5e1!3m2!1sen!2sae!4v1759572133193!5m2!1sen!2sae" 
+      style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" 
+      allowfullscreen 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- Buttons -->
+  <p style="margin-bottom:25px;">
+    <a href="https://www.google.com/maps/place/Bhagwal,+Kharian,+Gujrat,+Pakistan/" 
+       target="_blank" 
+       style="display:inline-block; padding:10px 20px; background:#0078D7; color:#fff; text-decoration:none; border-radius:5px; margin:5px;">
+      📍 Google Maps
+    </a>
+    
+    <a href="https://en.wikipedia.org/wiki/Bhagwal,_Gujrat" 
+       target="_blank" 
+       style="display:inline-block; padding:10px 20px; background:#555; color:#fff; text-decoration:none; border-radius:5px; margin:5px;">
+      📖 Wikipedia
+    </a>
+    
+    <a href="https://earth.google.com/web/search/Bhagwal,+Kharian,+Gujrat,+Pakistan/@32.8213957,73.95524185,307.53461904a,1536.5416692d,35y,0h,0t,0r/data=CpEBGmMSXQolMHgzOTFmYTZiZjEwNzgyZmJmOjB4NzE4NTBhMjNjZDRlOGRlZhlrxe2GI2lAQCGz85HvLX1SQCoiQmhhZ3dhbCwgS2hhcmlhbiwgR3VqcmF0LCBQYWtpc3RhbhgCIAEiJgokCTsPad5csDNAETgPad5csDPAGZlo12qJ0UhAIfh04SwgoknAQgIIAToDCgEwQgIIAEoNCP___________wEQAA" 
+       target="_blank" 
+       style="display:inline-block; padding:10px 20px; background:#34A853; color:#fff; text-decoration:none; border-radius:5px; margin:5px;">
+      🌍 Google Earth
+    </a>
+
+    <a href="https://sites.google.com/view/bhagwalpakistan/home" 
+       target="_blank" 
+       style="display:inline-block; padding:10px 20px; background:#FF5722; color:#fff; text-decoration:none; border-radius:5px; margin:5px;">
+      🌐 Official Website
+    </a>
+  </p>
+
+  <!-- Date & Time -->
+  <div id="date-time" style="margin-bottom:15px; font-size:1.1em; color:#333;"></div>
+
+  <!-- Prayer Times Table -->
+  <div style="border:1px solid #ddd; border-radius:10px; padding:15px; box-shadow:0 2px 6px rgba(0,0,0,0.1);">
+    <h3>Prayer Times - Jamia Mosque Gulzar-e-Madina, Bhagwal</h3>
+    <p><a href="https://maps.app.goo.gl/YRxVsrHb7gZ35ioV8" target="_blank" style="color:#0078D7; text-decoration:none;">📍 View on Google Maps</a></p>
+    <table style="width:100%; text-align:center; border-collapse:collapse; margin-top:10px;">
+      <tr style="background:#f2f2f2;">
+        <th style="padding:8px;">Fajr</th>
+        <th style="padding:8px;">Dhuhr</th>
+        <th style="padding:8px;">Asr</th>
+        <th style="padding:8px;">Maghrib</th>
+        <th style="padding:8px;">Isha</th>
+        <th style="padding:8px;">Jumu’ah</th>
+      </tr>
+      <tr>
+        <td style="padding:8px;">4:38 AM</td>
+        <td style="padding:8px;">11:54 AM</td>
+        <td style="padding:8px;">4:07 PM</td>
+        <td style="padding:8px;">5:48 PM</td>
+        <td style="padding:8px;">7:10 PM</td>
+        <td style="padding:8px;">1:15 PM (Friday)</td>
+      </tr>
+    </table>
+    <p style="margin-top:10px; font-size:0.9em; color:#555;">Times based on local calculations for Bhagwal, Kharian Tehsil, Gujrat District, Punjab, Pakistan (Karachi time zone).</p>
+  </div>
+
+  <!-- Copyright Note -->
+  <p style="margin-top:20px; font-size:0.8em; color:#888;">&copy; 2025 Bhagwal, Pakistan. All rights reserved.</p>
+</section>
+
+<script>
+// Function to update Gregorian and Hijri date + current time in Karachi timezone
+function updateDateTime() {
+    const now = new Date();
+
+    // Options for time & date
+    const optionsDate = { weekday:'long', year:'numeric', month:'long', day:'numeric', timeZone:'Asia/Karachi' };
+    const optionsTime = { hour:'2-digit', minute:'2-digit', second:'2-digit', hour12:true, timeZone:'Asia/Karachi' };
+    const optionsHijri = { day:'numeric', month:'long', year:'numeric', weekday:'long', calendar:'islamic', timeZone:'Asia/Karachi' };
+
+    // Gregorian date
+    const gregorian = now.toLocaleDateString('en-GB', optionsDate);
+    
+    // Time
+    const time = now.toLocaleTimeString('en-GB', optionsTime);
+
+    // Hijri date
+    const hijriFormatter = new Intl.DateTimeFormat('en-TN-u-ca-islamic', optionsHijri);
+    const hijri = hijriFormatter.format(now);
+
+    document.getElementById('date-time').innerHTML = `
+      🕒 Current Time (Karachi): <strong>${time}</strong><br>
+      📅 Gregorian Date: <strong>${gregorian}</strong><br>
+      🕌 Hijri Date: <strong>${hijri}</strong>
+    `;
+}
+
+// Update immediately and then every second
+updateDateTime();
+setInterval(updateDateTime, 1000);
+</script>
