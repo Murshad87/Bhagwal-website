@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="https://your-image-link.com/bhagwal-banner.jpg" alt="Bhagwal Banner" width="800">
-</p>
-
 # Awesome Bhagwal Projects
 
 [![GitHub stars](https://img.shields.io/github/stars/yourusername/awesome-bhagwal.svg)](https://github.com/yourusername/awesome-bhagwal/stargazers)
